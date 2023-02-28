@@ -18,3 +18,12 @@ $employee2->salary = 2000;
 
 echo( "Сумма зарплат: ".$employee1->salary + $employee2->salary."</br>");
 echo( "Сумма возрастов ".$employee1->age + $employee2->age);
+
+class User {
+    public function show($str) {
+        return $str."!!!";
+    }
+}
+
+$user = new User;
+echo ("</br>".$user->show('bebra'));
