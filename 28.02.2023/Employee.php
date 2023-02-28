@@ -4,11 +4,24 @@ class Employee
     public $name;
     public $age;
     public $salary;
+
+    public function ShowName() {
+        echo  $this->name;
+    }
+
+    public function CheckAge() {
+        if($this->age > 18) {
+            return "true";
+        } 
+        else {
+            return "false";
+        }
+    }
 }
 
 $employee1 = new Employee;
 $employee1->name = 'John';
-$employee1->age = 26;
+$employee1->age = 16;
 $employee1->salary = 1000;
 
 $employee2 = new Employee;
@@ -27,3 +40,7 @@ class User {
 
 $user = new User;
 echo ("</br>".$user->show('bebra'));
+
+$employee2->ShowName();
+
+echo "</br>".$employee1->CheckAge();
