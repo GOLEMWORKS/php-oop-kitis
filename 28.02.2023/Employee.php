@@ -74,7 +74,7 @@ class Bombaster {
     public $name;
     public $age;
 
-    public function isAgeCorrect($age) {
+    private function isAgeCorrect($age) {
         if($age<14) {
             return true; 
         } else {
