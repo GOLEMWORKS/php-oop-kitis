@@ -48,3 +48,18 @@ echo ("</br>".$user->show('bebra'));
 $employee2->ShowName();
 
 echo "</br>".$employee1->CheckAge();
+
+class Rectangle {
+    public $width;
+    public $height;
+
+    public function getPerimeter() {
+        $per = $this->width * 2 + $this->height * 2;
+        return $per;
+    }
+}
+
+$rect = new Rectangle;
+$rect->width=15;
+$rect->height=22;
+echo $rect->getPerimeter();
