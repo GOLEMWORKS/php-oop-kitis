@@ -70,4 +70,36 @@ $rect->height=22;
 echo "</br>perimeter: ".$rect->getPerimeter();
 echo "</br>square: ".$rect->getSquare();
 
+class Bombaster {
+    public $name;
+    public $age;
 
+    public function isAgeCorrect($age) {
+        if($age<14) {
+            return true; 
+        } else {
+            return false;
+        }
+    }
+
+    public function setAge($age) {
+        if($this->isAgeCorrect($age)){
+            $this->age = $age;
+        } else {
+            return "Ты слишком стар для бомбастера!";
+        }
+    }
+
+    public function addAge($years) {
+        $newAge = $this->age + $years;
+
+        if($this->isAgeCorrect($newAge)) {
+            $this->age = $newAge;
+        }
+    }
+}
+
+echo "</br>";
+$chelik = new Bombaster;
+$chelik->name='Jenya';
+$chelik->age=12;
