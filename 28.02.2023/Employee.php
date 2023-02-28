@@ -53,6 +53,11 @@ class Rectangle {
     public $width;
     public $height;
 
+    public function getSquare() {
+        $sqr = $this->width * $this->height;
+        return $sqr;
+    }
+
     public function getPerimeter() {
         $per = $this->width * 2 + $this->height * 2;
         return $per;
@@ -62,4 +67,7 @@ class Rectangle {
 $rect = new Rectangle;
 $rect->width=15;
 $rect->height=22;
-echo $rect->getPerimeter();
+echo "</br>perimeter: ".$rect->getPerimeter();
+echo "</br>square: ".$rect->getSquare();
+
+
