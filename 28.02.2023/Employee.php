@@ -91,7 +91,7 @@ class Bombaster {
     }
 
     public function addAge($years) {
-        $newAge = $this->age + $years;
+        $newAge = $this->age - $years;
 
         if($this->isAgeCorrect($newAge)) {
             $this->age = $newAge;
@@ -103,3 +103,5 @@ echo "</br>";
 $chelik = new Bombaster;
 $chelik->name='Jenya';
 $chelik->age=12;
+$chelik->addAge(4);
+echo $chelik->age;
