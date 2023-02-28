@@ -17,6 +17,10 @@ class Employee
             return "false";
         }
     }
+
+    public function setName($name){
+        $this->name = $name;
+    }
 }
 
 $employee1 = new Employee;
