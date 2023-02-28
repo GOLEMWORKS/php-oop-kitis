@@ -97,11 +97,14 @@ class Bombaster {
             $this->age = $newAge;
         }
     }
+
+    public function __construct($name, $age)
+    {
+        $this->name=$name;
+        $this->age=$age;
+    }
 }
 
 echo "</br>";
-$chelik = new Bombaster;
-$chelik->name='Jenya';
-$chelik->age=12;
-$chelik->addAge(4);
-echo $chelik->age;
+$chelik = new Bombaster('Jenya',14);
+var_dump($chelik);
